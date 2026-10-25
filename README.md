@@ -1,16 +1,54 @@
-# React + Vite
+# ShopEase
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ShopEase is a responsive e-commerce frontend portfolio project built with React
+and Vite. It currently uses a local product catalogue and client-side Redux
+state to demonstrate common shopping flows.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse a product catalogue with name search, category and price filters, and
+  price/rating sorting.
+- Open product details with price, rating, stock information, and cart/wishlist
+  actions.
+- Manage cart quantities, remove items, and see calculated subtotal, shipping,
+  and total.
+- Save wishlist items and move them into the cart.
+- Navigate between home, products, product details, cart, wishlist, login,
+  registration, checkout, and orders routes.
+- Responsive layouts, loading/error handling for catalogue retrieval, and a
+  not-found route.
 
-## React Compiler
+## Technology
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Redux Toolkit and React Redux
+- Oxlint
 
-## Expanding the Oxlint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Requirements: Node.js and npm.
+
+```sh
+npm install
+npm run dev
+```
+
+Vite prints the local development URL in the terminal.
+
+## Checks
+
+```sh
+npm run lint
+npm run build
+```
+
+## Current limitations
+
+- Product data is a local mock catalogue; no backend or database is connected.
+- Cart, wishlist, and authentication state are held in memory and reset when the
+  page reloads.
+- Login and registration, protected routes, checkout, payment simulation, order
+  submission, and order history are placeholders for later stories.
+- No live demo or project screenshots are available yet.
